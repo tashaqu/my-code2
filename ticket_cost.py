@@ -25,7 +25,7 @@ for i in range(ticket_number):
                 break
         except ValueError:
             print("Введите целое число")
-if ticket_number>5:
+if ticket_number>3:
     price_all-=price_all*(10*0.01)
     print(f"Сумма к оплате {price_all} руб. с учетом 10% скидки на полную стоимость заказа")
 else:
