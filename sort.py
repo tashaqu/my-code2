@@ -17,6 +17,9 @@ def binary_search(array,element,left,right):
     if left>right:
         return right
     middle=(right+left)//2
+    if array[right]<element or array[left]>element:
+        print("Число выходит за границы последовательности")
+        return
     if array[middle]==element:
         return middle
     elif element < array[middle]:
